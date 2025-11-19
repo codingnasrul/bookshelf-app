@@ -350,5 +350,8 @@ document.addEventListener('DOMContentLoaded', function() {
   setupAddBookForm();
   setupSearchForm();
   setupEditForm();
-  renderBooks();
+  renderBooks(); 
+  document.addEventListener('onbookschanged', function() {
+    renderBooks();
+  });
 });
